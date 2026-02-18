@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("/static/fondo_de_papeleria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Capa oscura */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.062);
+    z-index: 1;
+}
+
+
+.login-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 400px;
+    padding: 45px;
+    border-radius: 18px;
+    background: #f5f5f5;
+    text-align: center;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+.login-container h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e9e9e9;
+    font-size: 15px;
+}
+
+/* Botón azul */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to right, #2d8cff, #3c94ff);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #1c6edb, #2d8cff);
+}
+
+/* Link */
+.link {
+    margin-top: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #2d8cff;
+    font-size: 14px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/*Mensajes de éxito y error falta colocarle un tiempo*/ 
+.mensaje {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+

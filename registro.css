@@ -1,0 +1,224 @@
+/* Fondo moderno con degradado */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Tarjeta */
+.login-container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Título */
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 14px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* Focus */
+.login-container input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    outline: none;
+}
+
+/* Botón */
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover botón */
+.login-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Link */
+.link {
+    margin-top: 18px;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #667eea;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: #764ba2;
+}
+
+/* Mensajes flash */
+.mensaje {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    animation: slideDown 0.4s ease;
+}
+
+.success {
+    background: #e6f9f0;
+    color: #0f5132;
+}
+
+.error {
+    background: #fdecea;
+    color: #842029;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+}
+
+/* Contenedor tabla */
+.tabla-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Título */
+.tabla-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Tabla */
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Encabezado */
+.tabla-usuarios thead {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.tabla-usuarios th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Filas */
+.tabla-usuarios td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Hover fila */
+.tabla-usuarios tbody tr:hover {
+    background-color: #f5f7ff;
+    transition: 0.3s ease;
+}
+
+/* Última fila sin borde */
+.tabla-usuarios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Botón volver */
+.volver {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.volver a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.volver a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive tabla */
+@media (max-width: 600px) {
+    .tabla-container {
+        padding: 20px;
+    }
+
+    .tabla-usuarios {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
